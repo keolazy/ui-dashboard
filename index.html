@@ -22,74 +22,212 @@
     <!-- Navbar goes here -->
     <nav>
       <div class="nav-wrapper blue">
-        <a href="#!" class="brand-logo"><i class="material-icons graphic_eq">Artist Tracker</i></a>
+        <a href="#!" class="brand-logo"><i class="material-icons graphic_eq">Dynamic Dashboard</i></a>
         <ul class="right hide-on-med-and-down">
           <li><a class="waves-effect waves-light btn-large">Home</a></li>
         </ul>
       </div>
     </nav>
+
     <!-- Page Layout here -->
     <div class="row">
-<!--
-    <div id="work-collections">
-      <div class="row"></div>
-          <div class="col s12 m12 l6">
-            <ul>
-              <ul id="projects-collection" class="collection z-depth-1"></ul>
-                <li class="collection-item avatar">
-                  <i class="material-icons cycan circle">card_travel</i>
-                  <h6 class="collection-header m-0">Projects</h6>
-                  <p>Your Favorites</p>
-                </li>
-                <li class="collection-item"></li>
-                <li class="collection-item"></li>
-                <li class="collection-item"></li>
-                <li class="collection-item"></li>
-          </div>
-          <div class="col s12 m12 l6">
-            <ul>
-              <ul id="issues-collection" class="collection z-depth-1"></ul>
-          </div>
-      </div>
-    </div>
--->
 
-      <div class="col s12 m4 l3"> <!-- Note that "m4 l3" was added -->
-        <!-- Grey navigation panel
 
-              This content will be:
-          3-columns-wide on large screens,
-          4-columns-wide on medium screens,
-          12-columns-wide on small screens  -->
 
+
+
+    <div id="card-widgets">
+      <div class="row">
+        <!-- Tasks Card -->
+        <div class="col s12 m4 l4">
+          <!-- Try programming to add todos below all this -->
+          <ul id="task-card" class="collection with-header">
+            <li class="collection-header teal accent-4">
+              <h4 class="task-card-title">Daily Tasks</h4>
+              <p class="task-card-date">March 9th, 2018</p>
+            </li>
+            <li class="collection-item dismissable" style="touch-action: pany y; -webkit-user-drag: none; -webkit-taphighlight-color: regba(0, 0, 0,0);">
+                <input type="checkbox" id="task1">
+                <label for="task1" style="text-decoration: none;">
+                <!-- ::before -->
+                "Create Single Web Application UI"
+                <a href="#" class="secondary-content">...</a>
+                <!-- ::after -->
+              </label>
+              <span class='task-cat cyan'>Mobile App</span>
+          </li>
+
+            <li class="collection-item dismissable" style="touch-action: pany y; -webkit-user-drag: none; -webkit-taphighlight-color: regba(0, 0, 0,0);">
+                <input type="checkbox" id="task2">
+                <label for="task2" style="text-decoration: none;">
+                <!-- ::before -->
+                "Check the new API Standards"
+                <a href="#" class="secondary-content">...</a>
+                <!-- ::after -->
+              </label>
+              <span class='task-cat red accent-2'>Web API</span>
+          </li>
+
+          <li class="collection-item dismissable" style="touch-action: pany y; -webkit-user-drag: none; -webkit-taphighlight-color: regba(0, 0, 0,0);">
+              <input type="checkbox" id="task3" checked="checked">
+              <label for="task3" style="text-decoration: line-through;">
+              <!-- ::before -->
+              "Check the Balsamiq Mockup of Dynamic Dash Project"
+              <a href="#" class="secondary-content">...</a>
+              <!-- ::after -->
+            </label>
+            <span class='task-cat teal accent-4'>Mockup</span>
+          </li>
+
+          <li class="collection-item dismissable" style="touch-action: pany y; -webkit-user-drag: none; -webkit-taphighlight-color: regba(0, 0, 0,0);">
+              <input type="checkbox" id="task4" checked="checked" disabled="disabled">
+              <label for="task4" style="text-decoration: none;">
+              <!-- ::before -->
+              "Continue Building Application during SXSW"
+              <a href="#" class="secondary-content">...</a>
+              <!-- ::after -->
+            </label>
+            <span class='task-cat deep-orange accent-2'>Research</span>
+          </li>
+
+        </div>
+        <div class='col s12 m4 l4'>
+          <div id="profile-card" class="card" style='overflow: hidden;'>
+            <div class="card-image waves-effect waves-block waves-light">
+                <img class='activator' src="https://pixinvent.com/materialize-material-design-admin-template/images/gallary/3.png" alt="user bg">
+            </div>
+            <div class="card-content">
+              <img src="NKcopy.jpeg" alt class="circle responsive-img card-profile-image cyan lighten-1 padding-2">
+              <a class='btn-floating activator btn=move-up waves-effect waves-light red accent-2 z-depth-4 right'>
+                <i class='material-icons'>edit</i>
+              </a>
+              <span class="card-title activator grey-text text-darken-4">Nathan Keolasy</span>
+              <p>
+                <i class='material-icons'>***</i>
+                "Full Stack Marketing/Dev Bro"
+              </p>
+              <p>
+                  <i class='material-icons'>***</i>
+                  " +1 (210) 264 6188"
+              </p>
+              <p>
+                <i class='material-icons'>***</i>
+                "keolazy1@gmail.com"
+              </p>
+            </div>
 
             </div>
+          </div>
+          <div class="col s12 m4 l4">
+            <div id="flight-card" class="card">
+              <div class="card-header deep-orange accent-2">
+                <div class="card-title">
+                  <h4 class="flight-card-title">Travel Widget</h4>
+                  <p class='flight-card-data'>March 18, Sun 04:25</p>
+                </div>
+                <div class="card-content-bg white-text">
+                  <div class="card-content">
+                    <div class="row flight-state-wrapper">
+                      <div class="col s5 m5 l5 center-align">
+                            <div class="flight-state">
+                              <h4 class='margin'>AUS</h4>
+                              <p class='ultra-small'>Austin</p>
+                            </div>
+                      </div>
+
+                      <div class="col s2 m2 l2 center-align">
+                              <i class='material-icons flight-icon'>airplaneIcon</i>
+                      </div>
+
+                      <div class="col s5 m5 l5 center-align">
+                        <div class="flight-state">
+                          <h4 class='margin'>LA</h4>
+                          <p class='ultra-small'>Los Angeles</p>
+                        </div>
+                      </div>
+
+                    <div class="row">
+                        <div class="col s6 m6 l6 center-align">
+                          <div class="flight-info">
+                            <p class='small'>
+                              <span class='grey-text text-lighten-4'>Depart:</span>
+                              " 04:25"
+                            <p class='small'>
+                              <span class ='grey-text text-lighten-4'>Flight:</span>
+                              " Flight B6707"
+                            </p>
+                            <p class='small'>
+                              <span class='grey-text text-lighten-4'>Terminal:</span>
+                              " C"
+                          </div>
+                        </div>
+                        <div class="col s6 m6 l6 center-align flight-state-two">
+                            <div class="flight-info">
+                              <p class='small'>
+                                <span class='grey-text text-lighten-4'>Arrive:</span>
+                                " 06:45"
+                              <p class='small'>
+                                <span class ='grey-text text-lighten-4'>Flight:</span>
+                                " Flight B6707"
+                              </p>
+                              <p class='small'>
+                                <span class='grey-text text-lighten-4'>Terminal:</span>
+                                " B"
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+        <div class="card hoverable small">
+            <div class="card-image">
+              <img src="https://pixinvent.com/materialize-material-design-admin-template/images/gallary/33.png" alt="">
+              <span class='card-title'>Book A Show Below</span>
+            </div>
+            <div class="card-content">
+                <p>
+                  "Search an Artist in the form below. Check if they any have any upcoming events for you to book!"
+                </p>
+            </div>
+
+
+
+        </div>
+        <div class="row">
+          <div class="col s12 m4 l4">
             <input id='artistInput' type="text" placeholder="Enter Artist Name"  value="">
-            <div class="ui buttons">
-              <button id="getButton" class='ui primary button' type="button">Search Artists</button>
-              <button id="showAllButton" class='ui secondary button' type="button">Show All Past</button>
+              <div class="ui buttons">
+                <button id="getButton" class='ui primary button' type="button">Search Artists</button>
+                <button id="showAllButton" class='ui secondary button' type="button">Show All Past</button>
+              </div>
+          </div>
+          <div class="col s12 m4 l4">
+            <div id="results">
             </div>
+        </div>
+      </div>
+
+          <div class="row">
+              <div class="ui four column row">
+                  <div id='cardResults'>
+
+                  </div>  <!-- Past Searches Go Here -->
+              </div>
 
           </div>
 
 
-      </div>
-
-      <div class="col s12 m8 l9"> <!-- Note that "m8 l9" was added -->
-        <!-- Teal page content
-
-              This content will be:
-          9-columns-wide on large screens,
-          8-columns-wide on medium screens,
-          12-columns-wide on small screens  -->
-        <div id="results"></div>
-
-      </div>
+  </div> <!-- End of Page Layout Div -->
 
 
-    <div class="ui grid">
-        <div class="ui four column row" id='cardResults'></div>
-    </div>
+
+
 
   <script src="app.js" charset="utf-8"></script>
   </body>

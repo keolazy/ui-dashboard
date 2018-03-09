@@ -126,10 +126,10 @@ function getArtistEvents(string) {
 
   })
 
-  function getArtistEvents() {
-    fetch("https://rest.bandsintown.com/artists/underoath/events?app_id=nkg80")
-      .then(data => data.json())
-      .then(data => {
-        console.log(data);
-      })
-  }
+  // function getArtistEvents() {
+  //   fetch("https://rest.bandsintown.com/artists/underoath/events?app_id=nkg80")
+  //     .then(data => data.json())
+  //     .then(data => {
+  //       console.log(data);
+  //     })
+  // }
