@@ -32,10 +32,6 @@
     <!-- Page Layout here -->
     <div class="row">
 
-
-
-
-
     <div id="card-widgets">
       <div class="row">
         <!-- Tasks Card -->
@@ -45,14 +41,19 @@
             <li class="collection-header teal accent-4">
               <h4 class="task-card-title">Daily Tasks</h4>
               <p class="task-card-date">March 9th, 2018</p>
+              <!-- I put the todo list entry form below -->
+              <input id='user-input' placeholder='Write todo here' type="text" name="userInput">
+              <button id='add_todo' type="button" name="button">Submit New Task</button>
             </li>
+
+
             <li class="collection-item dismissable" style="touch-action: pany y; -webkit-user-drag: none; -webkit-taphighlight-color: regba(0, 0, 0,0);">
                 <input type="checkbox" id="task1">
                 <label for="task1" style="text-decoration: none;">
-                <!-- ::before -->
+
                 "Create Single Web Application UI"
                 <a href="#" class="secondary-content">...</a>
-                <!-- ::after -->
+
               </label>
               <span class='task-cat cyan'>Mobile App</span>
           </li>
@@ -60,10 +61,10 @@
             <li class="collection-item dismissable" style="touch-action: pany y; -webkit-user-drag: none; -webkit-taphighlight-color: regba(0, 0, 0,0);">
                 <input type="checkbox" id="task2">
                 <label for="task2" style="text-decoration: none;">
-                <!-- ::before -->
+
                 "Check the new API Standards"
                 <a href="#" class="secondary-content">...</a>
-                <!-- ::after -->
+
               </label>
               <span class='task-cat red accent-2'>Web API</span>
           </li>
@@ -71,10 +72,10 @@
           <li class="collection-item dismissable" style="touch-action: pany y; -webkit-user-drag: none; -webkit-taphighlight-color: regba(0, 0, 0,0);">
               <input type="checkbox" id="task3" checked="checked">
               <label for="task3" style="text-decoration: line-through;">
-              <!-- ::before -->
+
               "Check the Balsamiq Mockup of Dynamic Dash Project"
               <a href="#" class="secondary-content">...</a>
-              <!-- ::after -->
+
             </label>
             <span class='task-cat teal accent-4'>Mockup</span>
           </li>
@@ -82,15 +83,16 @@
           <li class="collection-item dismissable" style="touch-action: pany y; -webkit-user-drag: none; -webkit-taphighlight-color: regba(0, 0, 0,0);">
               <input type="checkbox" id="task4" checked="checked" disabled="disabled">
               <label for="task4" style="text-decoration: none;">
-              <!-- ::before -->
+
               "Continue Building Application during SXSW"
               <a href="#" class="secondary-content">...</a>
-              <!-- ::after -->
+
             </label>
             <span class='task-cat deep-orange accent-2'>Research</span>
           </li>
 
         </div>
+
         <div class='col s12 m4 l4'>
           <div id="profile-card" class="card" style='overflow: hidden;'>
             <div class="card-image waves-effect waves-block waves-light">

@@ -15,6 +15,44 @@ let cardHolder = []; // stores previous searches cards
 let pinnedArray = []; // stores pinned object info.
 let pinnedCards = []; // stores pinned cards
 
+
+
+let todoList = document.getElementById('task-card');
+let inputField = document.getElementsByTagName('input')[0];
+let theButton = document.getElementById('add_todo');
+let todoArray = []; // just keeps count of added todos to index each newLi
+
+function addTodo() {
+  let newTodo = inputField.value;
+  todoArray.push(newTodo);
+
+  let newLi = `
+
+    <li data-id="${todoArray.length} class="collection-item dismissable" style="touch-action: pany y; -webkit-user-drag: none; -webkit-taphighlight-color: regba(0, 0, 0,0);">
+      <input type='checkbox' class='done' id=${todoArray.length} checked='checked' disabled='disabled'>
+        <label for=${todoArray.length} style='text-decoration: none;'>
+            ${newTodo}
+        <a href='#' class='secondary-content'></a>
+        </label>
+        <span class='task-cat' red accent-2'>***</span>
+    </li>
+    `;
+
+  todoList.innerHTML += newLi; // this is the part i'm supposed to find in my new dashboard to append to.
+  inputField.value = '';
+}
+
+//
+theButton.addEventListener('click', ev => {
+  if(inputField.value) {
+    addTodo();
+  }
+});
+
+
+
+
+
 function getArtistEvents(string) {
   let content = '';
   let eventBoolean = null;
